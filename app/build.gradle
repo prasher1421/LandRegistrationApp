@@ -16,7 +16,6 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-
     buildTypes {
         release {
             minifyEnabled false
@@ -37,7 +36,16 @@ android {
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.7.0'
+    //metamask
+//    implementation 'com.github.MetaMask:mobile:v0.0.1'
+
+    implementation(platform("com.walletconnect:android-bom:1.5.0"))
+    implementation("com.walletconnect:android-core")
+    implementation("com.walletconnect:sign")
+
+    implementation 'de.hdodenhof:circleimageview:3.0.1'
+
+    implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.appcompat:appcompat:1.6.0'
     implementation 'com.google.android.material:material:1.8.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
