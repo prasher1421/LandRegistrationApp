@@ -2,4 +2,36 @@
     <string name="app_name">LandRegistration</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="edit_text_hint_title">Title</string>
+    <string name="edit_text_hint_description">Description</string>
+    <string name="edit_text_hint_date">Date</string>
+    <string name="edit_text_hint_location">Location</string>
+    <string name="text_add_image">ADD IMAGE</string>
+    <string name="btn_text_save">SAVE</string>
+
+    <string name="note_text_no_happy_places_found_yet_kindly_add_one">No Happy Places Found Yet. Kindly add one.</string>
+    <string name="image_content_description">image</string>
+
+    <string name="btn_text_view_on_map">VIEW ON MAP</string>
+    <string name="add_place_select_current_location_text">SELECT CURRENT LOCATION</string>
+    <string name="edit_text_hint_name">Name</string>
+    <string name="edit_text_hint_age">Age</string>
+    <string name="edit_text_hint_pan">PAN number</string>
+    <string name="text_add_aadhar">ADD AADHAR\nIMAGE</string>
+    <string name="edit_text_hint_email">Email</string>
+    <string name="objective">The objective of this project is to design and implement a land registration system using blockchain technology to improve the efficiency, security, and transparency of the land registration process.</string>
+    <string name="abstract_">The current land registration process is often complex, time-consuming, and prone to errors and fraud. Blockchain technology provides a secure, transparent, and tamper-proof way to record land ownership and other relevant information, making the process more efficient and accurate.</string>
+    <string name="workflow0">The landowner initiates the registration process by creating an account on the DApp and submitting all relevant ownership documents, such as title deeds and survey reports, and paying the required fees.</string>
+    <string name="workflow1">1. The DApp verifies the identity of the landowner through a Know Your Customer (KYC) process and confirms the authenticity of the submitted documents.</string>
+    <string name="workflow2">2. A land inspector is assigned to visit the land and verify its location, boundaries, and any structures or improvements on the land. They also confirm the identity of the landowner and any other parties involved in the registration process.</string>
+    <string name="workflow3">3. The inspector uses a mobile application to collect relevant data about the land, such as ownership documents, survey reports, maps, and photographs, and verifies the accuracy and authenticity of the data.</string>
+    <string name="workflow4">4. The inspector submits their findings and the collected data to the DApp, which automatically generates a report that is sent to the relevant government agency for approval.</string>
+    <string name="workflow5">5. Once the government agency approves the registration, the information is recorded on the blockchain, creating a tamper-proof record of land ownership.</string>
+    <string name="workflow6">6. A smart contract is created that allows for automated transfer of ownership, recording of mortgages and taxes, and other relevant transactions. The Smart contract is executed on the blockchain when all the necessary conditions are met.</string>
+    <string name="worflow7">7. The landowner can access their land records at any time through a secure portal that allows them to view, update and confirm their land records.</string>
+    <string name="workflow8">8. The DApp also provides a dashboard for the government agency to monitor and track the land registration process and to ensure the compliance with the regulations.</string>
+    <string name="workflow9">9. The DApp can also be integrated with other systems, such as banking, tax, and legal systems, to facilitate the seamless exchange of information and improve the overall efficiency of the registration process.</string>
+    <string name="workflow_conclusion">This DApp workflow plan provides a secure, transparent, and efficient way to record land ownership and other relevant information, making the land registration process faster, more accurate, and more accessible to all stakeholders.</string>
+
 </resources>
