@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -9,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId "com.prasher.landregistration"
-        minSdk 33
+        minSdk 25
         targetSdk 33
         versionCode 1
         versionName "1.0"
@@ -39,14 +40,28 @@ dependencies {
     //metamask
 //    implementation 'com.github.MetaMask:mobile:v0.0.1'
 
-    implementation(platform("com.walletconnect:android-bom:1.5.0"))
-    implementation("com.walletconnect:android-core")
-    implementation("com.walletconnect:sign")
+//    implementation(platform("com.walletconnect:android-bom:1.5.0"))
+//    implementation("com.walletconnect:android-core")
+//    implementation("com.walletconnect:sign")
+
+    def room_version = '2.5.0'
+    def activityVersion = '1.6.1'
+    //room db
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+
+
+    //kotlin extensions for coroutine support with room
+    implementation "androidx.room:room-ktx:$room_version"
+
+    //kotlin extension for coroutine support with activities
+    implementation "androidx.activity:activity-ktx:$activityVersion"
+
 
     implementation 'de.hdodenhof:circleimageview:3.0.1'
 
     implementation 'androidx.core:core-ktx:1.9.0'
-    implementation 'androidx.appcompat:appcompat:1.6.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.8.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     testImplementation 'junit:junit:4.13.2'
