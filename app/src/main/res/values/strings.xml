@@ -18,7 +18,7 @@
     <string name="edit_text_hint_name">Name</string>
     <string name="edit_text_hint_age">Age</string>
     <string name="edit_text_hint_pan">PAN number</string>
-    <string name="text_add_aadhar">ADD AADHAR\nIMAGE</string>
+    <string name="text_add_document">ADD\nIDENTITY\nPROOF</string>
     <string name="edit_text_hint_email">Email</string>
     <string name="objective">The objective of this project is to design and implement a land registration system using blockchain technology to improve the efficiency, security, and transparency of the land registration process.</string>
     <string name="abstract_">The current land registration process is often complex, time-consuming, and prone to errors and fraud. Blockchain technology provides a secure, transparent, and tamper-proof way to record land ownership and other relevant information, making the process more efficient and accurate.</string>
@@ -33,5 +33,7 @@
     <string name="workflow8">8. The DApp also provides a dashboard for the government agency to monitor and track the land registration process and to ensure the compliance with the regulations.</string>
     <string name="workflow9">9. The DApp can also be integrated with other systems, such as banking, tax, and legal systems, to facilitate the seamless exchange of information and improve the overall efficiency of the registration process.</string>
     <string name="workflow_conclusion">This DApp workflow plan provides a secure, transparent, and efficient way to record land ownership and other relevant information, making the land registration process faster, more accurate, and more accessible to all stakeholders.</string>
+    <string name="btn_text_signup">SIGN UP</string>
+    <string name="btn_text_login">LOGIN</string>
 
 </resources>
