@@ -49,16 +49,15 @@
                         android:textColor="@color/primary_text_color"
                         android:textSize="@dimen/item_land_title_textSize"
                         android:textStyle="bold"
-                        android:text="Name : " />
+                        android:text="Owner Address : " />
 
                     <TextView
-                        android:id="@+id/tv_user_name"
+                        android:id="@+id/tv_owner_address"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
                         android:textSize="@dimen/item_land_title_textSize"
-                        android:textStyle="bold"
-                        android:text="Aryan Prasher" />
+                        android:text="JBDSGSBKFSHGILL" />
 
                 </LinearLayout>
 
@@ -73,15 +72,15 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/item_land_description_text_color"
                         android:textSize="@dimen/item_land_description_textSize"
-                        android:text="Address : " />
+                        android:text="Location : " />
 
                     <TextView
-                        android:id="@+id/tv_user_address"
+                        android:id="@+id/tv_land_location"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
                         android:textSize="@dimen/item_land_description_textSize"
-                        android:text="YGYJU6TW3YRQ7URF7QTY8" />
+                        android:text="Hamirpur, Himachal Pradesh" />
 
                 </LinearLayout>
 
@@ -96,15 +95,15 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/item_land_description_text_color"
                         android:textSize="@dimen/item_land_description_textSize"
-                        tools:text="AADHAR : " />
+                        tools:text="Price : " />
 
                     <TextView
-                        android:id="@+id/tv_user_aadhaar"
+                        android:id="@+id/tv_land_price"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
                         android:textSize="@dimen/item_land_description_textSize"
-                        android:text="124314321342" />
+                        android:text="500000" />
 
                 </LinearLayout>
 
@@ -119,15 +118,38 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/item_land_description_text_color"
                         android:textSize="@dimen/item_land_description_textSize"
-                        android:text="PAN : " />
+                        android:text="PID : " />
 
                     <TextView
-                        android:id="@+id/tv_user_pan"
+                        android:id="@+id/tv_land_pid"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
                         android:textSize="@dimen/item_land_description_textSize"
-                        android:text="HPI5H3S5EF383" />
+                        android:text="1234" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/item_land_description_text_color"
+                        android:textSize="@dimen/item_land_description_textSize"
+                        android:text="Survey No. : " />
+
+                    <TextView
+                        android:id="@+id/tv_land_survey_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/item_land_description_textSize"
+                        android:text="121" />
 
                 </LinearLayout>
 
@@ -138,7 +160,7 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/tv_verify_document_user"
+                        android:id="@+id/tv_view_document_land"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
@@ -155,7 +177,7 @@
                         android:gravity="end">
 
                         <Button
-                            android:id="@+id/btn_verify_user"
+                            android:id="@+id/btn_verify_land"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="end|bottom"
