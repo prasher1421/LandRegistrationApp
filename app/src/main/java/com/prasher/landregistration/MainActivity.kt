@@ -20,8 +20,8 @@ class MainActivity : AppCompatActivity() {
                 R.id.home -> replaceFragment(Home())
                 R.id.about -> replaceFragment(About())
                 R.id.me -> replaceFragment(User())
-                R.id.contact -> replaceFragment(ContactOwner())
-                R.id.inspect -> replaceFragment(InspectLand())
+                R.id.contact -> replaceFragment(ContractOwner())
+                R.id.inspect -> replaceFragment(LandInspector())
 
                 else -> {}
             }

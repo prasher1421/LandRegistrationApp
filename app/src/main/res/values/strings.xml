@@ -35,5 +35,6 @@
     <string name="workflow_conclusion">This DApp workflow plan provides a secure, transparent, and efficient way to record land ownership and other relevant information, making the land registration process faster, more accurate, and more accessible to all stakeholders.</string>
     <string name="btn_text_signup">SIGN UP</string>
     <string name="btn_text_login">LOGIN</string>
+    <string name="view_document"><u>View Document</u></string>
 
 </resources>
