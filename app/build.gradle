@@ -57,6 +57,7 @@ dependencies {
     //kotlin extension for coroutine support with activities
     implementation "androidx.activity:activity-ktx:$activityVersion"
 
+    implementation 'androidx.webkit:webkit:1.4.0'
 
     implementation 'de.hdodenhof:circleimageview:3.0.1'
 
