@@ -26,7 +26,8 @@ class User : Fragment() {
         }
 
         binding.btnLogin.setOnClickListener {
-
+            val intent = Intent(activity,UserActivity::class.java)
+            startActivity(intent)
         }
         
 
