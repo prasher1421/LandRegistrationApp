@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Dashboard"
+        android:id="@+id/dashboard"
+        android:icon="@drawable/baseline_dashboard_24"
+        />
+    <item android:title="Verify User"
+        android:id="@+id/verify_user"
+        android:icon="@drawable/baseline_verified_user_24"/>
+
+    <item android:title="Verify Land"
+        android:id="@+id/verify_land"
+        android:icon="@drawable/baseline_verify_land_24"/>
+
+    <item android:title="Transfer Ownership"
+        android:id="@+id/transfer_ownership"
+        android:icon="@drawable/baseline_recycling_24"/>
+
+    <item android:title="Logout"
+        android:id="@+id/logout"
+        android:icon="@drawable/baseline_exit_to_app_24"/>
+
+</menu>
