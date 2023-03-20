@@ -5,72 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/skinLight"
-    tools:context=".LandInspectorActivity">
+    tools:context=".SignUpActivity">
 
     <TextView
         android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="User Dashboard"
+        android:text="Contract Owner"
         android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
         android:layout_marginBottom="5dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:textSize="25sp"/>
-
-
-
-    <TextView
-        android:id="@+id/tv_user_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@id/tv_title"
-        android:layout_marginTop="10dp"
-        android:text="Aryan"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
-
-    <TextView
-        android:id="@+id/tv_user_verification_status"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="17sp"
-        android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@id/tv_user_name"
-        android:layout_marginTop="5dp"
-        android:text="(Verified)"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
-
-
-    <Button
-        android:id="@+id/btn_continue"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginHorizontal="15dp"
-        android:layout_marginBottom="15dp"
-        android:background="@drawable/shape_button_rounded"
-        android:gravity="center"
-        android:paddingTop="@dimen/add_screen_btn_save_paddingTopBottom"
-        android:paddingBottom="@dimen/add_screen_btn_save_paddingTopBottom"
-        android:text="LOGOUT"
-        android:textColor="@color/white_color"
-        android:textSize="@dimen/btn_text_size"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        android:textSize="30sp"/>
 
     <LinearLayout
         android:id="@+id/ll_add_land"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@id/tv_user_verification_status"
-        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        android:layout_marginTop="45dp"
         android:layout_marginHorizontal="35dp"
         android:gravity="center">
 
@@ -85,7 +40,7 @@
             android:layout_height="wrap_content"
             android:textSize="25sp"
             android:textColor="@color/black"
-            android:text="Add Lands"/>
+            android:text="Add Land Inspector"/>
 
     </LinearLayout>
 
@@ -95,14 +50,14 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintTop_toBottomOf="@id/ll_add_land"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="25dp"
         android:layout_marginHorizontal="35dp"
         android:gravity="center">
 
         <ImageView
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:src="@drawable/lands"
+            android:src="@drawable/land_inspectors"
             android:layout_marginEnd="5dp"/>
         <TextView
             android:layout_gravity="center"
@@ -110,7 +65,7 @@
             android:layout_height="wrap_content"
             android:textSize="25sp"
             android:textColor="@color/black"
-            android:text="My Lands"/>
+            android:text="All Land Inspectors"/>
 
     </LinearLayout>
 
@@ -121,14 +76,14 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintTop_toBottomOf="@id/ll_my_lands"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="25dp"
         android:layout_marginHorizontal="35dp"
         android:gravity="center">
 
         <ImageView
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:src="@drawable/lands"
+            android:src="@drawable/transfer_ownership"
             android:layout_marginEnd="5dp"/>
         <TextView
             android:layout_gravity="center"
@@ -136,24 +91,24 @@
             android:layout_height="wrap_content"
             android:textSize="25sp"
             android:textColor="@color/black"
-            android:text="Land Gallery"/>
+            android:text="Change Contract Owner"/>
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/ll_received_requests"
+        android:id="@+id/ll_logout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintTop_toBottomOf="@id/ll_land_gallery"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="55dp"
         android:layout_marginHorizontal="35dp"
         android:gravity="center">
 
         <ImageView
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:src="@drawable/money"
+            android:src="@drawable/logout"
             android:layout_marginEnd="5dp"/>
         <TextView
             android:layout_gravity="center"
@@ -161,32 +116,7 @@
             android:layout_height="wrap_content"
             android:textSize="25sp"
             android:textColor="@color/black"
-            android:text="Received Requests"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/ll_sent_requests"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@id/ll_received_requests"
-        android:layout_marginTop="15dp"
-        android:layout_marginHorizontal="35dp"
-        android:gravity="center">
-
-        <ImageView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:src="@drawable/money"
-            android:layout_marginEnd="5dp"/>
-        <TextView
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="25sp"
-            android:textColor="@color/black"
-            android:text="Sent Requests"/>
+            android:text="Logout"/>
 
     </LinearLayout>
 

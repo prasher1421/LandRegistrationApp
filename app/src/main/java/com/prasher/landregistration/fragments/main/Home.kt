@@ -1,10 +1,10 @@
-package com.prasher.landregistration
+package com.prasher.landregistration.fragments.main
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.prasher.landregistration.databinding.FragmentHomeBinding
 
 class Home : Fragment() {
@@ -17,7 +17,7 @@ class Home : Fragment() {
         savedInstanceState: Bundle?,
     ): View? {
 
-        _binding = FragmentHomeBinding.inflate(inflater,container,false)
+        _binding = FragmentHomeBinding.inflate(inflater, container, false)
 
 
 

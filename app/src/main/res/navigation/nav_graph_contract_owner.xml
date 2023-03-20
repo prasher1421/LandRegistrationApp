@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_contract_owner"
+    app:startDestination="@id/nav_add_land_inspector">
+
+    <fragment android:name="com.prasher.landregistration.fragments.contract_owner.AddLandInspectorFragment"
+        android:id="@+id/nav_add_land_inspector"
+        android:label="Add Land Inspector"
+        tools:layout="@layout/fragment_add_land_inspector">
+        <action
+            android:id="@+id/action_nav_add_land_inspector_to_nav_change_contract_owner"
+            app:destination="@id/nav_change_contract_owner" />
+        <action
+            android:id="@+id/action_nav_add_land_inspector_to_nav_all_land_inspectors"
+            app:destination="@id/nav_all_land_inspectors" />
+    </fragment>
+
+    <fragment android:name="com.prasher.landregistration.fragments.contract_owner.AllLandInspectorsFragment"
+        android:id="@+id/nav_all_land_inspectors"
+        android:label="All Land Inspector"
+        tools:layout="@layout/fragment_all_land_inspectors">
+        <action
+            android:id="@+id/action_nav_all_land_inspectors_to_nav_change_contract_owner"
+            app:destination="@id/nav_change_contract_owner" />
+        <action
+            android:id="@+id/action_nav_all_land_inspectors_to_nav_add_land_inspector"
+            app:destination="@id/nav_add_land_inspector" />
+    </fragment>
+
+    <fragment android:name="com.prasher.landregistration.fragments.contract_owner.ChangeContractOwnerFragment"
+        android:id="@+id/nav_change_contract_owner"
+        android:label="Change Contract Owner"
+        tools:layout="@layout/fragment_change_contract_owner">
+        <action
+            android:id="@+id/action_nav_change_contract_owner_to_nav_add_land_inspector"
+            app:destination="@id/nav_add_land_inspector" />
+        <action
+            android:id="@+id/action_nav_change_contract_owner_to_nav_all_land_inspectors"
+            app:destination="@id/nav_all_land_inspectors" />
+    </fragment>
+
+
+
+</navigation>
