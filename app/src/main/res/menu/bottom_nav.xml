@@ -5,14 +5,14 @@
         android:id="@+id/home"
         android:icon="@drawable/ic_baseline_home_24"
         />
-    <item android:title="Me"
-        android:id="@+id/me"
+    <item android:title="User"
+        android:id="@+id/user"
         android:icon="@drawable/ic_baseline_person_24"/>
-    <item android:title="Inspect"
-        android:id="@+id/inspect"
+    <item android:title="Land Inspector"
+        android:id="@+id/land_inspector"
         android:icon="@drawable/baseline_landscape_24"/>
-    <item android:title="Contact"
-        android:id="@+id/contact"
+    <item android:title="Contract Owner"
+        android:id="@+id/contract_owner"
         android:icon="@drawable/ic_baseline_contact_page_24"/>
     <item android:title="About"
         android:id="@+id/about"

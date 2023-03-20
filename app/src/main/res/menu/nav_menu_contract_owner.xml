@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Add Land Inspector"
+        android:id="@+id/add_land_inspector"
+        android:icon="@drawable/baseline_add_reaction_24"
+        />
+    <item android:title="All Land Inspectors"
+        android:id="@+id/all_land_inspectors"
+        android:icon="@drawable/land_inspectors"/>
+
+    <item android:title="Change Contract Owner"
+        android:id="@+id/change_contract_owner"
+        android:icon="@drawable/baseline_recycling_24"/>
+
+    <item android:title="Logout"
+        android:id="@+id/logout"
+        android:icon="@drawable/baseline_exit_to_app_24"/>
+
+</menu>

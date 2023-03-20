@@ -36,6 +36,9 @@ android {
 }
 
 dependencies {
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
+
 
     //metamask
 //    implementation 'com.github.MetaMask:mobile:v0.0.1'
@@ -44,25 +47,26 @@ dependencies {
 //    implementation("com.walletconnect:android-core")
 //    implementation("com.walletconnect:sign")
 
-    def room_version = '2.5.0'
-    def activityVersion = '1.6.1'
-    //room db
-    implementation "androidx.room:room-runtime:$room_version"
-    annotationProcessor "androidx.room:room-compiler:$room_version"
+//    def room_version = '2.5.0'
+//    def activityVersion = '1.6.1'
+//    //room db
+//    implementation "androidx.room:room-runtime:$room_version"
+//    annotationProcessor "androidx.room:room-compiler:$room_version"
+//
+//
+//    //kotlin extensions for coroutine support with room
+//    implementation "androidx.room:room-ktx:$room_version"
+//
+//    //kotlin extension for coroutine support with activities
+//    implementation "androidx.activity:activity-ktx:$activityVersion"
 
-
-    //kotlin extensions for coroutine support with room
-    implementation "androidx.room:room-ktx:$room_version"
-
-    //kotlin extension for coroutine support with activities
-    implementation "androidx.activity:activity-ktx:$activityVersion"
-
-    implementation 'androidx.webkit:webkit:1.4.0'
+    implementation 'androidx.webkit:webkit:1.6.0'
 
     implementation 'de.hdodenhof:circleimageview:3.0.1'
 
     implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.navigation:navigation-fragment:2.5.3'
     implementation 'com.google.android.material:material:1.8.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     testImplementation 'junit:junit:4.13.2'

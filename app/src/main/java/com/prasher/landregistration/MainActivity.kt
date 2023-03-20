@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.prasher.landregistration.databinding.ActivityMainBinding
+import com.prasher.landregistration.fragments.main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,9 +20,9 @@ class MainActivity : AppCompatActivity() {
             when(it.itemId){
                 R.id.home -> replaceFragment(Home())
                 R.id.about -> replaceFragment(About())
-                R.id.me -> replaceFragment(User())
-                R.id.contact -> replaceFragment(ContractOwner())
-                R.id.inspect -> replaceFragment(LandInspector())
+                R.id.user -> replaceFragment(User())
+                R.id.contract_owner -> replaceFragment(ContractOwner())
+                R.id.land_inspector -> replaceFragment(LandInspector())
 
                 else -> {}
             }

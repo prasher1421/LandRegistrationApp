@@ -1,16 +1,18 @@
-package com.prasher.landregistration
+package com.prasher.landregistration.fragments.main
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import com.prasher.landregistration.SignUpActivity
+import com.prasher.landregistration.UserActivity
 import com.prasher.landregistration.databinding.FragmentUserBinding
 
 class User : Fragment() {
 
-    private var _binding :FragmentUserBinding? = null
+    private var _binding : FragmentUserBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -18,18 +20,18 @@ class User : Fragment() {
         savedInstanceState: Bundle?,
     ): View? {
 
-        _binding = FragmentUserBinding.inflate(layoutInflater,container,false)
+        _binding = FragmentUserBinding.inflate(layoutInflater, container, false)
 
         binding.btnSignup.setOnClickListener {
-            val intent = Intent(activity,SignUpActivity::class.java)
+            val intent = Intent(activity, SignUpActivity::class.java)
             startActivity(intent)
         }
 
         binding.btnLogin.setOnClickListener {
-            val intent = Intent(activity,UserActivity::class.java)
+            val intent = Intent(activity, UserActivity::class.java)
             startActivity(intent)
         }
-        
+
 
         return binding.root
         }

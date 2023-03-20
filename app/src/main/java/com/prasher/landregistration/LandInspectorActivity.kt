@@ -12,20 +12,20 @@ class LandInspectorActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = ActivityLandInspectorBinding.inflate(layoutInflater)
 
-        binding?.llVerifyUser?.setOnClickListener {
-            val intent = Intent(this,VerifyUserActivity::class.java)
-            startActivity(intent)
-        }
-
-        binding?.llVerifyLand?.setOnClickListener {
-            val intent = Intent(this,VerifyLandActivity::class.java)
-            startActivity(intent)
-        }
-
-        binding?.llTransferOwnership?.setOnClickListener {
-            val intent = Intent(this, TransferOwnershipActivity::class.java)
-            startActivity(intent)
-        }
+//        binding?.llVerifyUser?.setOnClickListener {
+//            val intent = Intent(this,VerifyUserActivity::class.java)
+//            startActivity(intent)
+//        }
+//
+//        binding?.llVerifyLand?.setOnClickListener {
+//            val intent = Intent(this,VerifyLandActivity::class.java)
+//            startActivity(intent)
+//        }
+//
+//        binding?.llTransferOwnership?.setOnClickListener {
+//            val intent = Intent(this, TransferOwnershipActivity::class.java)
+//            startActivity(intent)
+//        }
 
 
 

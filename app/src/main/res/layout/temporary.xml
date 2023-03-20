@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/skinLight"
-    tools:context=".ContractOwnerActivity">
-<!--
+    tools:context=".SignUpActivity">
 
     <TextView
         android:id="@+id/tv_title"
@@ -120,21 +119,6 @@
             android:text="Logout"/>
 
     </LinearLayout>
--->
-
-    <com.google.android.material.navigationrail.NavigationRailView
-        android:id="@+id/nav_rail"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        app:headerLayout="@layout/nav_header"
-        app:menu="@menu/nav_menu_contract_owner"
-        app:labelVisibilityMode="labeled"/>
-
-    <FrameLayout
-        android:id="@+id/fl_contract_owner"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_toEndOf="@id/nav_rail"/>
 
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
