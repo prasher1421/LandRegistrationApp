@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Dashboard"
+        android:id="@+id/dashboard"
+        android:icon="@drawable/baseline_dashboard_24"
+        />
+    <item android:title="Add Lands"
+        android:id="@+id/add_lands"
+        android:icon="@drawable/baseline_add_lands_24"/>
+
+    <item android:title="My Lands"
+        android:id="@+id/my_lands"
+        android:icon="@drawable/baseline_land_24"/>
+
+    <item android:title="Land Gallery"
+        android:id="@+id/land_gallery"
+        android:icon="@drawable/baseline_land_24"/>
+
+    <item android:title="Received Requests"
+        android:id="@+id/received_requests"
+        android:icon="@drawable/baseline_money_24"/>
+
+    <item android:title="Sent Requests"
+        android:id="@+id/sent_requests"
+        android:icon="@drawable/baseline_money_24"/>
+
+    <item android:title="Logout"
+        android:id="@+id/logout"
+        android:icon="@drawable/baseline_exit_to_app_24"/>
+
+</menu>
