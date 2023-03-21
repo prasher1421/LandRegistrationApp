@@ -5,10 +5,237 @@
     android:layout_height="match_parent"
     tools:context=".fragments.user.DashboardFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:background="@color/skinLight"
+        tools:context=".LandInspectorActivity">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Dashboard"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="25sp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_land_inspector_image"
+            android:layout_width="@dimen/item_happy_place_circular_image_size"
+            android:layout_height="@dimen/item_happy_place_circular_image_size"
+            android:contentDescription="@string/image_content_description"
+            android:src="@mipmap/ic_launcher_round"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"
+            app:civ_border_color="@color/circular_image_border_color" />
+
+        <TextView
+            android:id="@+id/tv_user_name_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/iv_land_inspector_image"
+            android:layout_marginTop="10dp"
+            android:text="Aryan"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_user_verification_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/tv_user_name_title"
+            android:layout_marginTop="10dp"
+            android:text="(Verified)"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/tv_user_verification_status"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="@dimen/item_happy_places_content_padding">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/item_happy_place_ll_marginStart"
+                android:layout_marginEnd="@dimen/item_happy_place_ll_marginEnd"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/primary_text_color"
+                        android:textSize="@dimen/item_land_title_textSize"
+                        android:textStyle="bold"
+                        android:text="Wallet Address : " />
+
+                    <TextView
+                        android:id="@+id/tv_user_wallet_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/item_land_title_textSize"
+                        android:text="JBDSGSBKFSHGILL" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/item_land_description_text_color"
+                        android:textSize="@dimen/item_land_description_textSize"
+                        android:text="Name : " />
+
+                    <TextView
+                        android:id="@+id/tv_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/item_land_description_textSize"
+                        android:text="Aryan Prasher" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/item_land_description_text_color"
+                        android:textSize="@dimen/item_land_description_textSize"
+                        tools:text="Age : " />
+
+                    <TextView
+                        android:id="@+id/tv_user_age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/item_land_description_textSize"
+                        android:text="18" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/item_land_description_text_color"
+                        android:textSize="@dimen/item_land_description_textSize"
+                        android:text="City : " />
+
+                    <TextView
+                        android:id="@+id/tv_city_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/item_land_description_textSize"
+                        android:text="Hamirpur, Himachal Pradesh" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/item_land_description_text_color"
+                        android:textSize="@dimen/item_land_description_textSize"
+                        android:text="Aadhar No. : " />
+
+                    <TextView
+                        android:id="@+id/tv_land_survey_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/item_land_description_textSize"
+                        android:text="123412341234" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_view_document_land"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/darkBlue"
+                    android:textSize="@dimen/item_land_description_textSize"
+                    android:text="@string/view_document"
+                    android:layout_marginBottom="4dp"
+                    />
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_continue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/shape_button_rounded"
+            android:gravity="center"
+            android:paddingTop="@dimen/add_screen_btn_save_paddingTopBottom"
+            android:paddingBottom="@dimen/add_screen_btn_save_paddingTopBottom"
+            android:text="LOGOUT"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/btn_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </FrameLayout>
