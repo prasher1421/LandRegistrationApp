@@ -15,28 +15,13 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".AddLandsActivity"
+            android:name=".DrawMapActivity"
             android:exported="false" />
         <activity
             android:name=".UserActivity"
             android:exported="false" />
         <activity
-            android:name=".AllLandInspectorActivity"
-            android:exported="false" />
-        <activity
-            android:name=".AddLandInspectorActivity"
-            android:exported="false" />
-        <activity
             android:name=".ContractOwnerActivity"
-            android:exported="false" />
-        <activity
-            android:name=".TransferOwnershipActivity"
-            android:exported="false" />
-        <activity
-            android:name=".VerifyLandActivity"
-            android:exported="false" />
-        <activity
-            android:name=".VerifyUserActivity"
             android:exported="false" />
         <activity
             android:name=".LandInspectorActivity"
