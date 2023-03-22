@@ -21,7 +21,7 @@ class ContractOwnerActivity : AppCompatActivity() {
         setContentView(binding?.root)
         replaceFragment(AddLandInspectorFragment())
 
-        var navController = NavController(this)
+        val navController = NavController(this)
         NavigationUI.setupWithNavController(binding?.navRail!!, navController)
 
         binding?.navRail?.setOnItemSelectedListener {
