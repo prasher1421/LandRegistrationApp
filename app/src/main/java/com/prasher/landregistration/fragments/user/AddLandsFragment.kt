@@ -41,7 +41,7 @@ class AddLandsFragment : Fragment() {
                 val intent =
                     Autocomplete.IntentBuilder(AutocompleteActivityMode.FULLSCREEN,fields)
                         .build(requireContext())
-                startActivity(intent)
+                startActivityForResult(intent)
                 val place : Place = Autocomplete.getPlaceFromIntent(intent)
                 mLatitude = place.latLng!!.latitude
                 mLongitude = place.latLng!!.longitude

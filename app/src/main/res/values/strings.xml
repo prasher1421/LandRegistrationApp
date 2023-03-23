@@ -39,5 +39,7 @@
     <string name="title_activity_maps">MapsActivity</string>
 
     <string name="google_maps_api_key">AIzaSyAnLHOrvpHWYUKPd1e5T-bX2F3uTuPPf8E</string>
+    <string name="upload_doc"><u>Upload Doc</u></string>
+    <string name="mark_land"><u>Mark Land</u></string>
 
 </resources>
