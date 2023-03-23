@@ -1,8 +1,9 @@
-package com.prasher.landregistration
+package com.prasher.landregistration.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import com.prasher.landregistration.R
 import com.prasher.landregistration.databinding.ActivityMainBinding
 import com.prasher.landregistration.fragments.main.*
 

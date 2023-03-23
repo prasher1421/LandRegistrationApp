@@ -1,12 +1,12 @@
-package com.prasher.landregistration
+package com.prasher.landregistration.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.RecoverySystem
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.ui.NavigationUI
+import com.prasher.landregistration.R
 import com.prasher.landregistration.databinding.ActivityUserBinding
 import com.prasher.landregistration.fragments.user.*
 
@@ -30,7 +30,7 @@ class UserActivity : AppCompatActivity() {
                 R.id.sent_requests -> replaceFragment(SentRequestsFragment())
                 R.id.received_requests -> replaceFragment(ReceivedRequestsFragment())
                 R.id.logout -> {
-                    val intent = Intent(this,MainActivity::class.java)
+                    val intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
                 }
                 else -> {}

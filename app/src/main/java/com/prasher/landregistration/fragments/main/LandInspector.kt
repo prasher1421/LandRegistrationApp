@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.prasher.landregistration.LandInspectorActivity
+import com.prasher.landregistration.activities.LandInspectorActivity
 import com.prasher.landregistration.databinding.FragmentLandInspectorBinding
 
 class LandInspector : Fragment() {
