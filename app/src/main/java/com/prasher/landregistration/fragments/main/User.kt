@@ -6,8 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.prasher.landregistration.SignUpActivity
-import com.prasher.landregistration.UserActivity
+import com.prasher.landregistration.activities.SignUpActivity
+import com.prasher.landregistration.activities.UserActivity
 import com.prasher.landregistration.databinding.FragmentUserBinding
 
 class User : Fragment() {

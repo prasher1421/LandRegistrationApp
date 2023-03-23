@@ -1,4 +1,4 @@
-package com.prasher.landregistration
+package com.prasher.landregistration.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -12,7 +12,7 @@ class SignUpActivity : AppCompatActivity() {
         binding = ActivitySignUpBinding.inflate(layoutInflater)
 
         binding?.btnContinue?.setOnClickListener {
-            val intent = Intent(this,UserActivity::class.java)
+            val intent = Intent(this, UserActivity::class.java)
             startActivity(intent)
         }
 

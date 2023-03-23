@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/skinLight"
-    tools:context=".PrivateKeyLoginActivity">
+    tools:context=".activities.PrivateKeyLoginActivity">
 
     <TextView
         android:id="@+id/tv_title"

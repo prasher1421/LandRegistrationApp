@@ -1,4 +1,4 @@
-package com.prasher.landregistration
+package com.prasher.landregistration.activities
 
 class TransferOwnershipModel(
     private var landID :Int,

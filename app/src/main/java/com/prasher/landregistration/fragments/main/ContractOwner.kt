@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.prasher.landregistration.ContractOwnerActivity
+import com.prasher.landregistration.activities.ContractOwnerActivity
 import com.prasher.landregistration.databinding.FragmentContractOwnerBinding
 
 class ContractOwner : Fragment() {
@@ -22,7 +22,7 @@ class ContractOwner : Fragment() {
         _binding = FragmentContractOwnerBinding.inflate(layoutInflater, container, false)
 
         binding.btnContinue.setOnClickListener {
-            val intent = Intent(activity,ContractOwnerActivity::class.java)
+            val intent = Intent(activity, ContractOwnerActivity::class.java)
             startActivity(intent)
         }
 

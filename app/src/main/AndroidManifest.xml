@@ -28,26 +28,25 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_api_key" />
+            android:value="YOUR_API_KEY" />
 
-
         <activity
-            android:name=".UserActivity"
+            android:name=".activities.UserActivity"
             android:exported="false" />
         <activity
-            android:name=".ContractOwnerActivity"
+            android:name=".activities.ContractOwnerActivity"
             android:exported="false" />
         <activity
-            android:name=".LandInspectorActivity"
+            android:name=".activities.LandInspectorActivity"
             android:exported="false" />
         <activity
-            android:name=".PrivateKeyLoginActivity"
+            android:name=".activities.PrivateKeyLoginActivity"
             android:exported="false" />
         <activity
-            android:name=".SignUpActivity"
+            android:name=".activities.SignUpActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

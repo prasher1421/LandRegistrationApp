@@ -1,4 +1,4 @@
-package com.prasher.landregistration
+package com.prasher.landregistration.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,11 +6,8 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.ui.NavigationUI
+import com.prasher.landregistration.R
 import com.prasher.landregistration.databinding.ActivityLandInspectorBinding
-import com.prasher.landregistration.databinding.ActivityPrivateKeyLoginBinding
-import com.prasher.landregistration.fragments.contract_owner.AddLandInspectorFragment
-import com.prasher.landregistration.fragments.contract_owner.AllLandInspectorsFragment
-import com.prasher.landregistration.fragments.contract_owner.ChangeContractOwnerFragment
 import com.prasher.landregistration.fragments.land_inspector.DashboardFragment
 import com.prasher.landregistration.fragments.land_inspector.TransferOwnershipFragment
 import com.prasher.landregistration.fragments.land_inspector.VerifyLandFragment
@@ -35,7 +32,7 @@ class LandInspectorActivity : AppCompatActivity() {
                 R.id.verify_user -> replaceFragment(VerifyUserFragment())
                 R.id.transfer_ownership -> replaceFragment(TransferOwnershipFragment())
                 R.id.logout -> {
-                    val intent = Intent(this,MainActivity::class.java)
+                    val intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
                 }
                 else -> {}

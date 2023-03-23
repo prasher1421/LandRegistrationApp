@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/skinLight"
-    tools:context=".UserActivity">
+    tools:context=".activities.UserActivity">
 
     <com.google.android.material.navigationrail.NavigationRailView
         android:id="@+id/nav_rail"
