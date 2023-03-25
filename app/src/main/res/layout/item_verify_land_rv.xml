@@ -95,7 +95,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/item_land_description_text_color"
                         android:textSize="@dimen/item_land_description_textSize"
-                        tools:text="Price : " />
+                        android:text="Price : " />
 
                     <TextView
                         android:id="@+id/tv_land_price"
