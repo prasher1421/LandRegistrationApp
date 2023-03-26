@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main"
+    app:startDestination="@id/home2">
+
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.prasher.landregistration.fragments.main.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_contractOwner"
+            app:destination="@id/contractOwner" />
+        <action
+            android:id="@+id/action_home2_to_landInspector"
+            app:destination="@id/landInspector" />
+        <action
+            android:id="@+id/action_home2_to_user2"
+            app:destination="@id/user2" />
+    </fragment>
+    <fragment
+        android:id="@+id/contractOwner"
+        android:name="com.prasher.landregistration.fragments.main.ContractOwner"
+        android:label="fragment_contract_owner"
+        tools:layout="@layout/fragment_contract_owner" />
+    <fragment
+        android:id="@+id/landInspector"
+        android:name="com.prasher.landregistration.fragments.main.LandInspector"
+        android:label="fragment_land_inspector"
+        tools:layout="@layout/fragment_land_inspector" />
+    <fragment
+        android:id="@+id/user2"
+        android:name="com.prasher.landregistration.fragments.main.User"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_user" />
+</navigation>
