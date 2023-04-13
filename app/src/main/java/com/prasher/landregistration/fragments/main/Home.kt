@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
@@ -24,33 +25,20 @@ class Home : Fragment() {
         savedInstanceState: Bundle?,
     ): View? {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
-//
-//        val navController = Navigation.findNavController(requireActivity(),R.id.nav_graph_main)
-//        navController.navigate(R.id.home2)
-
-        val navController=NavController(requireContext())
-//
-//        binding.fragmentHome.findNavController()
-
-//        val navController = NavHostFragment.findNavController(this)
 
 
-        binding.cvContractOwner.setOnClickListener {
-//            navController.navigate(R.id.action_home2_to_contractOwner)
-            findNavController().navigate(R.id.action_home2_to_contractOwner)
-        }
-//
+
 //        binding.cvContractOwner.setOnClickListener {
-//            navController.navigate(R.id.action_home2_to_contractOwner)
-////            findNavController().navigate(R.id.action_home2_to_contractOwner)
+//            val action = HomeDirections.actionHome2ToContractOwner()
+//            findNavController().navigate(action)
 //        }
 //        binding.cvLandInspector.setOnClickListener {
-//            navController.navigate(R.id.action_home2_to_landInspector)
-////            findNavController().navigate(R.id.action_home2_to_landInspector)
+//            val action = HomeDirections.actionHome2ToLandInspector()
+//            findNavController().navigate(action)
 //        }
 //        binding.cvUser.setOnClickListener {
-//            navController.navigate(R.id.action_home2_to_user2)
-////            findNavController().navigate(R.id.action_home2_to_user2)
+//            val action = HomeDirections.actionHome2ToUser2()
+//            findNavController().navigate(action)
 //        }
 
 

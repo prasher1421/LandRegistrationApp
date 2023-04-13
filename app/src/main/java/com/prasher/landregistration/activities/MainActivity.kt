@@ -4,37 +4,29 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
-import androidx.navigation.Navigation
-import androidx.navigation.findNavController
-import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.ui.NavigationUI
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.prasher.landregistration.R
-import com.prasher.landregistration.databinding.ActivityMainBinding
 import com.prasher.landregistration.fragments.main.*
 
 class MainActivity : AppCompatActivity() {
 
-    private var binding : ActivityMainBinding? = null
+//    private var binding : ActivityMainBinding? = null
 
+    private lateinit var navController: NavController
     override fun onCreate(savedInstanceState: Bundle?) {
-        binding = ActivityMainBinding.inflate(layoutInflater)
+//        binding = ActivityMainBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
-        setContentView(binding?.root)
+        setContentView(R.layout.activity_main)
         replaceFragment(Home())
 
-//        val navController = Navigation.findNavController(this,R.id.nav_graph_main)
+//        navController = findNavController(R.id.my_nav_host_fragment)
 //
-//        navController.navigate(R.id.home2)
-        NavController(this)
+//        binding?.navBar?.setupWithNavController(navController)
 
-//        binding?.myNavHostFragment?.findNavController()
 
-//        val navHostFragment = supportFragmentManager.findFragmentById(R.id.my_nav_host_fragment) as NavHostFragment
-//        val navController = navHostFragment.navController
-//
-//        NavigationUI.setupWithNavController(binding?.navBar!!,navController)
+        val navBar = findViewById<BottomNavigationView>(R.id.nav_bar)
 
-        binding?.navBar?.setOnItemSelectedListener {
+        navBar?.setOnItemSelectedListener {
             when(it.itemId){
                 R.id.home -> replaceFragment(Home())
                 R.id.about -> replaceFragment(About())
@@ -49,16 +41,13 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+
+
     private fun replaceFragment(fragment : Fragment){
         val fragmentManager = supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
         fragmentTransaction.replace(R.id.my_nav_host_fragment,fragment)
         fragmentTransaction.commit()
-    }
-
-    override fun onDestroy() {
-        binding = null
-        super.onDestroy()
     }
 
 }
